@@ -1,6 +1,6 @@
 ﻿namespace Login_and_Register_System
 {
-    partial class Form1
+    partial class formRegister
     {
         /// <summary>
         ///  Required designer variable.
@@ -47,7 +47,7 @@
             lblgetstart.AutoSize = true;
             lblgetstart.Font = new Font("MS UI Gothic", 20F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblgetstart.ForeColor = Color.RoyalBlue;
-            lblgetstart.Location = new Point(53, 72);
+            lblgetstart.Location = new Point(59, 46);
             lblgetstart.Name = "lblgetstart";
             lblgetstart.Size = new Size(226, 40);
             lblgetstart.TabIndex = 0;
@@ -57,7 +57,7 @@
             // lblusername
             // 
             lblusername.AutoSize = true;
-            lblusername.Location = new Point(32, 149);
+            lblusername.Location = new Point(38, 123);
             lblusername.Name = "lblusername";
             lblusername.Size = new Size(106, 28);
             lblusername.TabIndex = 1;
@@ -68,7 +68,7 @@
             txtUsername.BackColor = Color.FromArgb(230, 231, 233);
             txtUsername.BorderStyle = BorderStyle.None;
             txtUsername.Font = new Font("MS UI Gothic", 16F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtUsername.Location = new Point(32, 180);
+            txtUsername.Location = new Point(38, 154);
             txtUsername.Multiline = true;
             txtUsername.Name = "txtUsername";
             txtUsername.Size = new Size(289, 35);
@@ -77,7 +77,7 @@
             // lblpassword
             // 
             lblpassword.AutoSize = true;
-            lblpassword.Location = new Point(32, 228);
+            lblpassword.Location = new Point(38, 202);
             lblpassword.Name = "lblpassword";
             lblpassword.Size = new Size(100, 28);
             lblpassword.TabIndex = 1;
@@ -88,7 +88,7 @@
             txtpassword.BackColor = Color.FromArgb(230, 231, 233);
             txtpassword.BorderStyle = BorderStyle.None;
             txtpassword.Font = new Font("MS UI Gothic", 16F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtpassword.Location = new Point(32, 259);
+            txtpassword.Location = new Point(38, 233);
             txtpassword.Multiline = true;
             txtpassword.Name = "txtpassword";
             txtpassword.Size = new Size(289, 35);
@@ -97,7 +97,7 @@
             // lblconfirmpass
             // 
             lblconfirmpass.AutoSize = true;
-            lblconfirmpass.Location = new Point(32, 310);
+            lblconfirmpass.Location = new Point(38, 284);
             lblconfirmpass.Name = "lblconfirmpass";
             lblconfirmpass.Size = new Size(182, 28);
             lblconfirmpass.TabIndex = 1;
@@ -108,7 +108,7 @@
             txtconfirmpass.BackColor = Color.FromArgb(230, 231, 233);
             txtconfirmpass.BorderStyle = BorderStyle.None;
             txtconfirmpass.Font = new Font("MS UI Gothic", 16F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtconfirmpass.Location = new Point(32, 341);
+            txtconfirmpass.Location = new Point(38, 315);
             txtconfirmpass.Multiline = true;
             txtconfirmpass.Name = "txtconfirmpass";
             txtconfirmpass.Size = new Size(289, 35);
@@ -119,7 +119,7 @@
             checkbxshowpass.AutoSize = true;
             checkbxshowpass.Cursor = Cursors.Hand;
             checkbxshowpass.FlatStyle = FlatStyle.Flat;
-            checkbxshowpass.Location = new Point(138, 382);
+            checkbxshowpass.Location = new Point(144, 356);
             checkbxshowpass.Name = "checkbxshowpass";
             checkbxshowpass.Size = new Size(178, 32);
             checkbxshowpass.TabIndex = 3;
@@ -134,7 +134,7 @@
             btnRegister.FlatStyle = FlatStyle.Flat;
             btnRegister.Font = new Font("Nirmala UI", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnRegister.ForeColor = Color.White;
-            btnRegister.Location = new Point(32, 442);
+            btnRegister.Location = new Point(38, 416);
             btnRegister.Name = "btnRegister";
             btnRegister.Size = new Size(289, 48);
             btnRegister.TabIndex = 4;
@@ -148,7 +148,7 @@
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Nirmala UI", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button1.ForeColor = Color.DodgerBlue;
-            button1.Location = new Point(32, 506);
+            button1.Location = new Point(38, 480);
             button1.Name = "button1";
             button1.Size = new Size(289, 48);
             button1.TabIndex = 4;
@@ -158,7 +158,7 @@
             // lblHaveAcc
             // 
             lblHaveAcc.AutoSize = true;
-            lblHaveAcc.Location = new Point(53, 583);
+            lblHaveAcc.Location = new Point(59, 557);
             lblHaveAcc.Name = "lblHaveAcc";
             lblHaveAcc.Size = new Size(252, 28);
             lblHaveAcc.TabIndex = 5;
@@ -169,7 +169,7 @@
             lblBackLog.AutoSize = true;
             lblBackLog.Cursor = Cursors.Hand;
             lblBackLog.ForeColor = Color.RoyalBlue;
-            lblBackLog.Location = new Point(93, 611);
+            lblBackLog.Location = new Point(99, 585);
             lblBackLog.Name = "lblBackLog";
             lblBackLog.Size = new Size(149, 28);
             lblBackLog.TabIndex = 5;
@@ -181,7 +181,7 @@
             AutoScaleDimensions = new SizeF(12F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(368, 691);
+            ClientSize = new Size(368, 649);
             Controls.Add(lblBackLog);
             Controls.Add(lblHaveAcc);
             Controls.Add(button1);

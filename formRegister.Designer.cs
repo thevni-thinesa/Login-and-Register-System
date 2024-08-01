@@ -125,6 +125,7 @@
             checkbxshowpass.TabIndex = 3;
             checkbxshowpass.Text = "Show Password";
             checkbxshowpass.UseVisualStyleBackColor = true;
+            checkbxshowpass.CheckedChanged += checkbxshowpass_CheckedChanged;
             // 
             // btnRegister
             // 

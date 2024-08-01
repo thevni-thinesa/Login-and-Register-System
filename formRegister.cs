@@ -40,6 +40,11 @@ namespace Login_and_Register_System
             }
         }
 
+        private void checkbxshowpass_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -54,6 +59,5 @@ namespace Login_and_Register_System
         {
 
         }
-
     }
 }

@@ -8,7 +8,7 @@ namespace Login_and_Register_System
         {
             InitializeComponent();
 
-            OleDbConnection con = new OleDbConnection(" ");
+            OleDbConnection con = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0; Data Source=db_users.mdb");
             OleDbCommand cmd = new OleDbCommand();
             OleDbDataAdapter adapter = new OleDbDataAdapter();
 

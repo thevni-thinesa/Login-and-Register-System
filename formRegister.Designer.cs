@@ -140,6 +140,7 @@
             btnRegister.TabIndex = 4;
             btnRegister.Text = "REGISTER";
             btnRegister.UseVisualStyleBackColor = false;
+            btnRegister.Click += btnRegister_Click;
             // 
             // button1
             // 
@@ -176,7 +177,7 @@
             lblBackLog.Text = "Back to LOGIN";
             lblBackLog.Click += lblBackLog_Click;
             // 
-            // Form1
+            // formRegister
             // 
             AutoScaleDimensions = new SizeF(12F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -198,7 +199,7 @@
             ForeColor = Color.FromArgb(164, 165, 169);
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(4, 3, 4, 3);
-            Name = "Form1";
+            Name = "formRegister";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             Load += Form1_Load;

@@ -28,7 +28,7 @@ namespace Login_and_Register_System
                 cmd.ExecuteNonQuery();
                 con.Close();
 
-                MessageBox.Show("Your Account has been Successfully Created", "Registration Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Your Account has been Successfully Created!", "Registration Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
             else

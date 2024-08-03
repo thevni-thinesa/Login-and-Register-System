@@ -37,7 +37,7 @@
             txtconfirmpass = new TextBox();
             checkbxshowpass = new CheckBox();
             btnRegister = new Button();
-            button1 = new Button();
+            btnClear = new Button();
             lblHaveAcc = new Label();
             lblBackLog = new Label();
             SuspendLayout();
@@ -91,8 +91,10 @@
             txtpassword.Location = new Point(38, 233);
             txtpassword.Multiline = true;
             txtpassword.Name = "txtpassword";
+            txtpassword.PasswordChar = '.';
             txtpassword.Size = new Size(289, 35);
             txtpassword.TabIndex = 2;
+            txtpassword.TextChanged += txtpassword_TextChanged;
             // 
             // lblconfirmpass
             // 
@@ -111,6 +113,7 @@
             txtconfirmpass.Location = new Point(38, 315);
             txtconfirmpass.Multiline = true;
             txtconfirmpass.Name = "txtconfirmpass";
+            txtconfirmpass.PasswordChar = '.';
             txtconfirmpass.Size = new Size(289, 35);
             txtconfirmpass.TabIndex = 2;
             // 
@@ -143,19 +146,20 @@
             btnRegister.UseVisualStyleBackColor = false;
             btnRegister.Click += btnRegister_Click;
             // 
-            // button1
+            // btnClear
             // 
-            button1.BackColor = Color.White;
-            button1.Cursor = Cursors.Hand;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Nirmala UI", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.DodgerBlue;
-            button1.Location = new Point(38, 480);
-            button1.Name = "button1";
-            button1.Size = new Size(289, 48);
-            button1.TabIndex = 4;
-            button1.Text = "CLEAR";
-            button1.UseVisualStyleBackColor = false;
+            btnClear.BackColor = Color.White;
+            btnClear.Cursor = Cursors.Hand;
+            btnClear.FlatStyle = FlatStyle.Flat;
+            btnClear.Font = new Font("Nirmala UI", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnClear.ForeColor = Color.DodgerBlue;
+            btnClear.Location = new Point(38, 480);
+            btnClear.Name = "btnClear";
+            btnClear.Size = new Size(289, 48);
+            btnClear.TabIndex = 4;
+            btnClear.Text = "CLEAR";
+            btnClear.UseVisualStyleBackColor = false;
+            btnClear.Click += button1_Click;
             // 
             // lblHaveAcc
             // 
@@ -186,7 +190,7 @@
             ClientSize = new Size(368, 649);
             Controls.Add(lblBackLog);
             Controls.Add(lblHaveAcc);
-            Controls.Add(button1);
+            Controls.Add(btnClear);
             Controls.Add(btnRegister);
             Controls.Add(checkbxshowpass);
             Controls.Add(txtconfirmpass);
@@ -219,7 +223,7 @@
         private TextBox txtconfirmpass;
         private CheckBox checkbxshowpass;
         private Button btnRegister;
-        private Button button1;
+        private Button btnClear;
         private Label lblHaveAcc;
         private Label lblBackLog;
     }

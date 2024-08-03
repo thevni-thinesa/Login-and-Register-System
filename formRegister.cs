@@ -28,6 +28,10 @@ namespace Login_and_Register_System
                 cmd.ExecuteNonQuery();
                 con.Close();
 
+                txtUsername.Text = "";
+                txtpassword.Text = "";
+                txtconfirmpass.Text = "";
+
                 MessageBox.Show("Your Account has been Successfully Created", "Registration Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
@@ -42,8 +46,44 @@ namespace Login_and_Register_System
 
         private void checkbxshowpass_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (checkbxshowpass.Checked)
+            {
+                txtpassword.PasswordChar = '\0';
+                txtconfirmpass.PasswordChar = '\0';
+            }
+            else
+            {
+                txtpassword.PasswordChar = '*';
+                txtconfirmpass.PasswordChar = '*';
+            }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            txtUsername.Text = "";
+            txtpassword.Text = "";
+            txtconfirmpass.Text = "";
+            txtUsername.Focus();
+        }
+
+        private void lblBackLog_Click(object sender, EventArgs e)
+        {
+            new loginForm().Show();
+            this.Hide();
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -55,7 +95,7 @@ namespace Login_and_Register_System
 
         }
 
-        private void lblBackLog_Click(object sender, EventArgs e)
+        private void txtpassword_TextChanged(object sender, EventArgs e)
         {
 
         }

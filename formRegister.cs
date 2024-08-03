@@ -18,7 +18,7 @@ namespace Login_and_Register_System
         {
             if (txtUsername.Text == "" && txtpassword.Text == "" && txtconfirmpass.Text == "")
             {
-                MessageBox.Show("Username and Password fields are empty", "Registration Faild", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Username and Password fields are empty", "Registration Faild..", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else if (txtpassword.Text == txtconfirmpass.Text)
             {

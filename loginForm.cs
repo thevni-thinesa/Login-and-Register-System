@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.OleDb;
+
 
 namespace Login_and_Register_System
 {
@@ -16,6 +18,10 @@ namespace Login_and_Register_System
         {
             InitializeComponent();
         }
+
+        OleDbConnection con = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0; Data Source=db_users.mdb");
+        OleDbCommand cmd = new OleDbCommand();
+        OleDbDataAdapter adapter = new OleDbDataAdapter();
 
         private void loginForm_Load(object sender, EventArgs e)
         {

@@ -27,5 +27,51 @@ namespace Login_and_Register_System
         {
 
         }
+
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+            con.Open();
+            string login = "SELECT * FROM tbl_users WHERE username= '" + txtUsername.Text + "' and password= '" + txtpassword.Text + "'";
+            cmd = new OleDbCommand(login, con);
+            OleDbDataReader dr = cmd.ExecuteReader();
+
+            if (dr.Read() == true)
+            {
+                new dashboard().Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Invalid Username or Password, Please Try Again", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtUsername.Text = "";
+                txtpassword.Text = "";
+                txtUsername.Focus();
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            txtUsername.Text = "";
+            txtpassword.Text = "";
+            txtUsername.Focus();
+        }
+
+        private void checkbxshowpass_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkbxshowpass.Checked)
+            {
+                txtpassword.PasswordChar = '\0';
+            }
+            else
+            {
+                txtpassword.PasswordChar = '*';
+            }
+        }
+
+        private void lblBackLog_Click(object sender, EventArgs e)
+        {
+            new formRegister().Show();
+            this.Hide();
+        }
     }
 }

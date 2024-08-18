@@ -50,6 +50,7 @@
             lblBackLog.Size = new Size(157, 28);
             lblBackLog.TabIndex = 16;
             lblBackLog.Text = "Create Account";
+            lblBackLog.Click += lblBackLog_Click;
             // 
             // lblHaveAcc
             // 
@@ -73,6 +74,7 @@
             button1.TabIndex = 14;
             button1.Text = "CLEAR";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // btnRegister
             // 
@@ -88,6 +90,7 @@
             btnRegister.TabIndex = 15;
             btnRegister.Text = "LOGIN";
             btnRegister.UseVisualStyleBackColor = false;
+            btnRegister.Click += btnRegister_Click;
             // 
             // checkbxshowpass
             // 
@@ -100,15 +103,17 @@
             checkbxshowpass.TabIndex = 13;
             checkbxshowpass.Text = "Show Password";
             checkbxshowpass.UseVisualStyleBackColor = true;
+            checkbxshowpass.CheckedChanged += checkbxshowpass_CheckedChanged;
             // 
             // txtpassword
             // 
             txtpassword.BackColor = Color.FromArgb(230, 231, 233);
             txtpassword.BorderStyle = BorderStyle.None;
-            txtpassword.Font = new Font("MS UI Gothic", 16F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtpassword.Font = new Font("MS UI Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtpassword.Location = new Point(42, 259);
             txtpassword.Multiline = true;
             txtpassword.Name = "txtpassword";
+            txtpassword.PasswordChar = '.';
             txtpassword.Size = new Size(289, 35);
             txtpassword.TabIndex = 11;
             // 
@@ -116,7 +121,7 @@
             // 
             txtUsername.BackColor = Color.FromArgb(230, 231, 233);
             txtUsername.BorderStyle = BorderStyle.None;
-            txtUsername.Font = new Font("MS UI Gothic", 16F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtUsername.Font = new Font("MS UI Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtUsername.Location = new Point(42, 180);
             txtUsername.Multiline = true;
             txtUsername.Name = "txtUsername";

@@ -28,6 +28,10 @@ namespace Login_and_Register_System
                 cmd.ExecuteNonQuery();
                 con.Close();
 
+                txtUsername.Text = "";
+                txtpassword.Text = "";
+                txtconfirmpass.Text = "";
+
                 MessageBox.Show("Your Account has been Successfully Created", "Registration Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
@@ -49,8 +53,8 @@ namespace Login_and_Register_System
             }
             else
             {
-                txtpassword.PasswordChar = '*';
-                txtconfirmpass.PasswordChar = '*';
+                txtpassword.PasswordChar = '.';
+                txtconfirmpass.PasswordChar = '.';
             }
         }
 
